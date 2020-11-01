@@ -61,4 +61,11 @@ function sort(){
     //Unluckiest Day
     console.log(`Unluckiest Day: ${amount.slice(amount.length-2,amount.length-1)}`);
 }
-monthlyGambling()
+function playNextMonth() {
+    monthlyGambling()
+    if(totalAmount > 0)
+        console.log("Gamble playing for next month");
+    else
+        console.log("Stop playing");    
+}
+playNextMonth()

@@ -35,11 +35,12 @@ function monthlyGambling() {
         var cash = dialyGambling()
         dictionary[day] = cash
         totalAmount += dictionary[day]
-        console.log(`Day${day} winning ammount: ${dictionary[day]}`);
+        console.log(`Amount of Day ${day}: ${dictionary[day]}`)
+        // console.log(`Day${day} winning ammount: ${dictionary[day]}`);
     }
     if(totalAmount > 0 )
-        console.log("Total amount of 20 days:" +totalAmount);
+        console.log("Total amount win of 20 days:" +totalAmount);
     else
-        console.log("Total amount of 20 days:" +totalAmount);
+        console.log("Total amount loss of 20 days:" +totalAmount);
 }
 monthlyGambling()
